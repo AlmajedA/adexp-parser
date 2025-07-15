@@ -1,0 +1,19 @@
+<!-- Author: Ammar Almajed -->
+
+<!-- Structure of this XML -->
+<!-- <MessageTitle name="" isOLDImessage="" >
+    <Primary name="" min="" max="">keyword</Primary>
+</Message> -->
+
+
+
+
+
+
+<!-- Flight Plan Messages -->
+
+<!-- Titles -->
+<!-- [ACK, IARR, ICHG, ICNL, IDEP, IDLA, IFPL, IRPL, IRQP, MAN, RCHG, RCNL, REJ] -->
+<MessageTitle name="ACK" isOLDImessage="" >
+    <Primary name="" min="" max="">keyword</Primary>
+</Message>

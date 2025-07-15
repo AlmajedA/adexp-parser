@@ -1,0 +1,25 @@
+<!-- Author: Ammar Almajed -->
+
+<!-- Structure of this XML -->
+<!-- <AuxilliaryTerm name="" regexp="" errmsg="" multi=""></AuxilliaryTerm> -->
+
+<!-- 
+ALPHA: [A-Z]
+DIGIT: [0-9]
+ALPHANUM: [A-Z0-9]
+SPACE: [ ]
+HYPHEN: [-]
+FEF: [\r\n]
+SEP: [ \r\n]+
+SPECIAL: [ \(\)\?:\.,'=+/]
+CHARACTER: [A-Z0-9 \(\)\?:\.,'=+/\r\n-]
+LIM_CHAR: [A-Z0-9 \(\)\?:\.,'=+/\r\n]
+START-OF-FIELD: ^-
+ -->
+<root>
+    <AuxilliaryTerm name="adexpmsg" regexp="[A-Z0-9 \(\)\?:\.,'=+/\r\n-]" errmsg="" multi=""/>
+    <AuxilliaryTerm name="aidequipment" regexp="^(N|S)?(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z)+" errmsg="" multi=""/>
+    <AuxilliaryTerm name="aircraftid" regexp="[A-Z0-9]{2,7}" errmsg="" multi=""/>
+    <AuxilliaryTerm name="aircraftidwldcrd" regexp="([A-Z0-9]|+|?){1, 7}" errmsg="" multi=""/>
+    <AuxilliaryTerm name="airporttype" regexp="{$CHARACTER}" errmsg="" multi=""/>
+</root>
