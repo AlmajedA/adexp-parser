@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubFields>
+    <SubField
+      id="ADDRINFO"
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+    <SubField
+      id=""
+      syntax=""
+      errmsg=""
+      multi="">
+    <AuxTermRef ref=""/>
+  </SubField>
+    <!-- ================================= -->
+  <SubField
+      id="BRNG"
+      syntax="-&quot;BRNG&quot; &lt;refbearing&gt;"
+      errmsg="invalid bearing"
+      multi="false">
+    <AuxTermRef ref="refbearing"/>
+  </SubField>
+</SubFields>
