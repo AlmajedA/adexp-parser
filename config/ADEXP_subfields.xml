@@ -17,12 +17,13 @@
   <SubField id="ADNAME" errmsg="invalid ADNAME" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_ADNAME"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,50}"/>
   </SubField>
 
   <SubField id="ADSADDRESS" errmsg="invalid ADSADDRESS" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_ADSADDRESS"/>
-    <AuxTermRef ref="hexadecimal"/>
+    <Regex regexp="(?:[0-9A-F]{36}|[0-9A-F]{38})"/>
   </SubField>
 
   <SubField id="ADSQVLTSP" errmsg="invalid ADSQVLTSP" multi="false">
@@ -36,13 +37,13 @@
   <SubField id="AGAPPQUALIFIER" errmsg="invalid AGAPPQUALIFIER" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_AGAPPQUALIFIER"/>
-    <AuxTermRef ref="agappqualifier"/>
+    <Regex regexp="^(?:0|2|3|22)$"/>
   </SubField>
 
   <SubField id="AGAPPVERSION" errmsg="invalid AGAPPVERSION" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_AGAPPVERSION"/>
-    <AuxTermRef ref="agappversion"/>
+    <Regex regexp="^(?:00|01|02)$"/>
   </SubField>
 
   <SubField id="AIRROUTE" errmsg="invalid AIRROUTE" multi="false">
