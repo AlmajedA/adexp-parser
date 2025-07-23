@@ -1,7 +1,7 @@
 <!-- Author: Ammar Almajed -->
 
 <!-- Structure of this XML -->
-<!-- <AuxiliaryTerm name="" regexp="" errmsg="" multi=""></AuxiliaryTerm> -->
+<!-- <AuxiliaryTerm id="" regexp="" errmsg="" multi=""></AuxiliaryTerm> -->
 
 <!-- 
 ALPHA: [A-Z]
@@ -60,7 +60,7 @@ day: (0|1|2|3)[0-9]
     <AuxiliaryTerm id="fulldatetime" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9](0|1|2)[0-9](0|1|2|3|4|5)][0-9]" errmsg="" multi=""/>
     <AuxiliaryTerm id="geoname" regexp="GEO[0-9]{2,3}" errmsg="" multi=""/>
     <AuxiliaryTerm id="heading" regexp="[0-9]{3}" errmsg="" multi=""/>
-    <AuxiliaryTerm id="hexadecimal" regexp="^[0123456789ABCDF]?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="hexadecimal" regexp="^[0123456789ABCDEF]?" errmsg="" multi=""/>
     <AuxiliaryTerm id="iatalocationcat" regexp="^[ADE]?" errmsg="" multi=""/>
     <AuxiliaryTerm id="iatadelaycode" regexp="[0-9]{2}" errmsg="" multi=""/>
     <AuxiliaryTerm id="icaoaerodrome" regexp="[A-Z]{4}" errmsg="" multi=""/>
