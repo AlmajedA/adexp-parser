@@ -1,7 +1,7 @@
 <!-- Author: Ammar Almajed -->
 
 <!-- Structure of this XML -->
-<!-- <AuxilliaryTerm name="" regexp="" errmsg="" multi=""></AuxilliaryTerm> -->
+<!-- <AuxiliaryTerm name="" regexp="" errmsg="" multi=""></AuxiliaryTerm> -->
 
 <!-- 
 ALPHA: [A-Z]
@@ -21,94 +21,94 @@ month: (0|1)[0-9]
 day: (0|1|2|3)[0-9] 
  -->
 <AuxTerms>
-    <AuxilliaryTerm id="adexpmsg" regexp="[A-Z0-9 \(\)\?:\.,'=+/\r\n-]*" errmsg="" multi=""/>
-    <AuxilliaryTerm id="aidequipment" regexp="^(N|S)?(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z)+" errmsg="" multi=""/>
-    <AuxilliaryTerm id="aircraftid" regexp="[A-Z0-9]{2,7}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="aircraftidwldcrd" regexp="([A-Z0-9]|+|?){1, 7}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="airporttype" regexp="ADVANCEDATCTWR|CDM" errmsg="" multi=""/>
-    <AuxilliaryTerm id="airtemperature" regexp="^(?:P|N)?\d{3}(?:C|F|K)?$" errmsg="" multi=""/>
-    <AuxilliaryTerm id="atfmflightstate" regexp="FI|FS|SI|TA|AA|CA|TE|SU" errmsg="" multi=""/>
-    <AuxilliaryTerm id="atfmmodeltype" regexp="EST|CAL|ACT" errmsg="" multi=""/>
-    <AuxilliaryTerm id="atfmrdystate" regexp="D|N" errmsg="" multi=""/>
-    <AuxilliaryTerm id="atfmreasonclass" regexp="MSG|SYS|REG|MAN" errmsg="" multi=""/>
-    <AuxilliaryTerm id="atsroute" regexp="[A-Z0-9]{2,7}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="cdmstatusvalue" regexp="DPIEXPECTED|ESTIMATED|TARGETED|PRESEQUENCED|ACTUALOFFBLOCK|PREDICTED" errmsg="" multi=""/>
-    <AuxilliaryTerm id="century" regexp="[0-9]{2}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="coorstatusident" regexp="[A-Z]{3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="coorstatusreason" regexp="[A-Z]{3,7}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="country" regexp="[A-Z]{2}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="datalink" regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,50}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="date" regexp="[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="datetime" regexp="[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9](0|1|2)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="datewldcrd" regexp="([0-9]|+|?){1,6}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="day" regexp="(0|1|2|3)[0-9] " errmsg="" multi=""/>
-    <AuxilliaryTerm id="emergradio" regexp="(U|V|E){1,3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="equipmentcode" regexp="(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z)+" errmsg="" multi=""/>
-    <AuxilliaryTerm id="eqptcode" regexp="(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z){1}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="eqptstatus" regexp="(EQ|UN|NO){1}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="errorcode" regexp="[0-9]{1,4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="eurflightplanstatus" regexp="(PROTECTED|OAT){1}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="eventtype" regexp="[A-Z0-9]{3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="fieldid" regexp="[A-Z0-9]+" errmsg="" multi=""/>
-    <AuxilliaryTerm id="firindicator" regexp="[A-Z]{4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="flightlevel" regexp="((F|A)[0-9]{3}|(S|M)[0-9]{4})" errmsg="" multi=""/>
-    <AuxilliaryTerm id="flightplanstatus" regexp="^(ALTRV|ATFMX|FFR|FLTCK|HAZMAT|HEAD|HOSP|HUM|MARSA|MEDEVAC|NONRVSM|SAR|STATE)?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="flightrule" regexp="(I|V|Y|Z)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="flighttype" regexp="(S|N|G|M|X)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="flighttypechg" regexp="(OAT|GAT)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="fulldate" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9(0|1|2|3)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="fulldatetime" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9(0|1|2|3)[0-9](0|1|2)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="geoname" regexp="GEO[0-9]{2,3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="heading" regexp="[0-9]{3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="hexadecimal" regexp="^[0123456789ABCDF]?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="iatalocationcat" regexp="^[ADE]?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="iatadelaycode" regexp="[0-9]{2}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="icaoaerodrome" regexp="[A-Z]{4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="icaoaerodromewldcrd" regexp="([A-Z]|+|?){1,4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="icaoaircrafttype" regexp="[A-Z][A-Z0-9]{1,3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="icaomsg" regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n-]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="ifpsdiscrepancyvalue" regexp="ARCTYP|REG|OBT" errmsg="" multi=""/>
-    <AuxilliaryTerm id="ifpsprocess" regexp="^(IFPSTART|IFPSTOP)?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="ifpuid" regexp="[A-Z0-9]+" errmsg="" multi=""/>
-    <AuxilliaryTerm id="ifpvalue" regexp="(ERROUTRAD|ERROUTWE|ERROUTE|ERRTYPE|ERRLEVEL|ERREOBT|NON833|833UNKNOWN|MODESASP|RVSMVIOLATION|NONRVSM|RVSMUNKNOWN)+" errmsg="" multi=""/>
-    <AuxilliaryTerm id="latitudelong" regexp="[0-9]{6}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="latitudeside" regexp="(N|S)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="lifejackets" regexp="(L|F|U|V){1,4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="longitudelong" regexp="[0-9]{7}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="longitudeside" regexp="(E|W)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="machnumber " regexp="M[0-9]{3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="modifind" regexp="[A-Z0-9]+" errmsg="" multi=""/>
-    <AuxilliaryTerm id="month" regexp="(0|1)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="numdays" regexp="(0|1)(0|2)(0|3)(0|4)(0|5)(0|6)(0|7)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="numdayswldcrd" regexp="[0-9+?]{1,7}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="originatorid" regexp="[A-Z0-9]{1,10}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="pbncode" regexp="(A1|B1|B2|B3|B4|B5|B6|C1|C2|C3|C4|D1|D2|D3|D4|L1|O1|O2|O3|O4|S1|S2|T1|T2){1,8}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="performancecategory" regexp="^[ABCDEH]?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="point" regexp="([A-Z0-9]{2,5})|(GEO[0-9]{2,3})|(REF[0-9]{2})|(REN[0-9]{2})" errmsg="" multi=""/>
-    <AuxilliaryTerm id="pubname" regexp="[A-Z0-9]{2,5}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="readyforimpr" regexp="[IS]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="refbearing" regexp="[0-9]{3}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="refname" regexp="REF[0-9]{2}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="regulationreason" regexp="^[ACDEGIMNOPSTVW]?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="regulid" regexp="[A-Z0-9]{1,20}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="renameid" regexp="REN[0-9]{2}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="rrteid" regexp="[A-Z0-9]{1,20}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="rtf" regexp="[0-9]{6}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="rulechg" regexp="(VFR|IFR)" errmsg="" multi=""/>
-    <AuxilliaryTerm id="seconds" regexp="[0-5][0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="sidstarid" regexp="([A-Z0-9]{2,5})|(GEO[0-9]{2,3})|(REF[0-9]{2})|(REN[0-9]{2})[0-9]^[A-Z]?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="spd" regexp="(K|N)[0-9]{4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="surequipment" regexp="^(?=.{1,20}$)(?!.*(B1.*B1|B2.*B2|D1.*D1|G1.*G1|U1.*U1|U2.*U2|V1.*V1|V2.*V2))(N|([AC]{1,3}|[AC]{0,2}[IPX][AC]{0,2}|[ACEHLS]{1,6})((?:B1|B2|D1|G1|U1|U2|V1|V2){0,8}))$" errmsg="" multi=""/>
-    <AuxilliaryTerm id="surclass" regexp="(A|S|ADSB|ADSC){1}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="sureqptcode" regexp="^(A|B1|B2|C|D1|E|G1|H|I|L|P|S|U1|U2|V1|V2|X)?" errmsg="" multi=""/>
-    <AuxilliaryTerm id="stayidentifier" regexp="STAY[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="survivaleqpt" regexp="[PDMJ]{1,4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="timehhmm" regexp="(0|1|2)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="timehhmmss" regexp="(0|1|2)[0-9](0|1|2|3|4|5)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="timehhmm_elapsed" regexp="[0-9]{2}[0-5][0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="timemmss_elapsed" regexp="[0-9]{2}[0-5][0-9]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="timewldcrd" regexp="[0-9+?]{1,4}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="titleid" regexp="[A-Z]{1,10}" errmsg="" multi=""/>
-    <AuxilliaryTerm id="waketurbcat" regexp="[HMLJ]" errmsg="" multi=""/>
-    <AuxilliaryTerm id="year" regexp="[0-9]{2}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="adexpmsg" regexp="[A-Z0-9 \(\)\?:\.,'=+/\r\n-]*" errmsg="" multi=""/>
+    <AuxiliaryTerm id="aidequipment" regexp="^(N|S)?(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z)+" errmsg="" multi=""/>
+    <AuxiliaryTerm id="aircraftid" regexp="[A-Z0-9]{2,7}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="aircraftidwldcrd" regexp="([A-Z0-9]|\+|\?){1,7}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="airporttype" regexp="ADVANCEDATCTWR|CDM" errmsg="" multi=""/>
+    <AuxiliaryTerm id="airtemperature" regexp="^(?:P|N)?\d{3}(?:C|F|K)?$" errmsg="" multi=""/>
+    <AuxiliaryTerm id="atfmflightstate" regexp="FI|FS|SI|TA|AA|CA|TE|SU" errmsg="" multi=""/>
+    <AuxiliaryTerm id="atfmmodeltype" regexp="EST|CAL|ACT" errmsg="" multi=""/>
+    <AuxiliaryTerm id="atfmrdystate" regexp="D|N" errmsg="" multi=""/>
+    <AuxiliaryTerm id="atfmreasonclass" regexp="MSG|SYS|REG|MAN" errmsg="" multi=""/>
+    <AuxiliaryTerm id="atsroute" regexp="[A-Z0-9]{2,7}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="cdmstatusvalue" regexp="DPIEXPECTED|ESTIMATED|TARGETED|PRESEQUENCED|ACTUALOFFBLOCK|PREDICTED" errmsg="" multi=""/>
+    <AuxiliaryTerm id="century" regexp="[0-9]{2}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="coorstatusident" regexp="[A-Z]{3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="coorstatusreason" regexp="[A-Z]{3,7}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="country" regexp="[A-Z]{2}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="datalink" regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,50}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="date" regexp="[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="datetime" regexp="[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9](0|1|2)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="datewldcrd" regexp="([0-9]|\+|\?){1,6}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="day" regexp="(0|1|2|3)[0-9] " errmsg="" multi=""/>
+    <AuxiliaryTerm id="emergradio" regexp="(U|V|E){1,3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="equipmentcode" regexp="(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z)+" errmsg="" multi=""/>
+    <AuxiliaryTerm id="eqptcode" regexp="(A|B|C|D|E1|E2|E3|F|G|H|I|J1|J2|J3|J4|J5|J6|J7|K|L|M1|M2|M3|O|P1|P2|P3|P4|P5|P6|P7|P8|P9|R|S|T|U|V|W|X|Y|Z){1}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="eqptstatus" regexp="(EQ|UN|NO){1}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="errorcode" regexp="[0-9]{1,4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="eurflightplanstatus" regexp="(PROTECTED|OAT){1}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="eventtype" regexp="[A-Z0-9]{3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="fieldid" regexp="[A-Z0-9]+" errmsg="" multi=""/>
+    <AuxiliaryTerm id="firindicator" regexp="[A-Z]{4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flightlevel" regexp="((F|A)[0-9]{3}|(S|M)[0-9]{4})" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flightplanstatus" regexp="^(ALTRV|ATFMX|FFR|FLTCK|HAZMAT|HEAD|HOSP|HUM|MARSA|MEDEVAC|NONRVSM|SAR|STATE)?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flightrule" regexp="(I|V|Y|Z)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flighttype" regexp="(S|N|G|M|X)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flighttypechg" regexp="(OAT|GAT)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="fulldate" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="fulldatetime" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9](0|1|2)[0-9](0|1|2|3|4|5)][0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="geoname" regexp="GEO[0-9]{2,3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="heading" regexp="[0-9]{3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="hexadecimal" regexp="^[0123456789ABCDF]?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="iatalocationcat" regexp="^[ADE]?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="iatadelaycode" regexp="[0-9]{2}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="icaoaerodrome" regexp="[A-Z]{4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="icaoaerodromewldcrd" regexp="([A-Z]|\+|\?){1,4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="icaoaircrafttype" regexp="[A-Z][A-Z0-9]{1,3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="icaomsg" regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n-]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="ifpsdiscrepancyvalue" regexp="ARCTYP|REG|OBT" errmsg="" multi=""/>
+    <AuxiliaryTerm id="ifpsprocess" regexp="^(IFPSTART|IFPSTOP)?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="ifpuid" regexp="[A-Z0-9]+" errmsg="" multi=""/>
+    <AuxiliaryTerm id="ifpvalue" regexp="(ERROUTRAD|ERROUTWE|ERROUTE|ERRTYPE|ERRLEVEL|ERREOBT|NON833|833UNKNOWN|MODESASP|RVSMVIOLATION|NONRVSM|RVSMUNKNOWN)+" errmsg="" multi=""/>
+    <AuxiliaryTerm id="latitudelong" regexp="[0-9]{6}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="latitudeside" regexp="(N|S)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="lifejackets" regexp="(L|F|U|V){1,4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="longitudelong" regexp="[0-9]{7}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="longitudeside" regexp="(E|W)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="machnumber" regexp="M[0-9]{3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="modifind" regexp="[A-Z0-9]+" errmsg="" multi=""/>
+    <AuxiliaryTerm id="month" regexp="(0|1)[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="numdays" regexp="(0|1)(0|2)(0|3)(0|4)(0|5)(0|6)(0|7)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="numdayswldcrd" regexp="[0-9+?]{1,7}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="originatorid" regexp="[A-Z0-9]{1,10}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="pbncode" regexp="(A1|B1|B2|B3|B4|B5|B6|C1|C2|C3|C4|D1|D2|D3|D4|L1|O1|O2|O3|O4|S1|S2|T1|T2){1,8}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="performancecategory" regexp="^[ABCDEH]?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="point" regexp="([A-Z0-9]{2,5})|(GEO[0-9]{2,3})|(REF[0-9]{2})|(REN[0-9]{2})" errmsg="" multi=""/>
+    <AuxiliaryTerm id="pubname" regexp="[A-Z0-9]{2,5}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="readyforimpr" regexp="[IS]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="refbearing" regexp="[0-9]{3}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="refname" regexp="REF[0-9]{2}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="regulationreason" regexp="^[ACDEGIMNOPSTVW]?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="regulid" regexp="[A-Z0-9]{1,20}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="renameid" regexp="REN[0-9]{2}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="rrteid" regexp="[A-Z0-9]{1,20}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="rtf" regexp="[0-9]{6}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="rulechg" regexp="(VFR|IFR)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="seconds" regexp="[0-5][0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="sidstarid" regexp="([A-Z0-9]{2,5})|(GEO[0-9]{2,3})|(REF[0-9]{2})|(REN[0-9]{2})[0-9]^[A-Z]?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="spd" regexp="(K|N)[0-9]{4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="surequipment" regexp="^(?=.{1,20}$)(?!.*(B1.*B1|B2.*B2|D1.*D1|G1.*G1|U1.*U1|U2.*U2|V1.*V1|V2.*V2))(N|([AC]{1,3}|[AC]{0,2}[IPX][AC]{0,2}|[ACEHLS]{1,6})((?:B1|B2|D1|G1|U1|U2|V1|V2){0,8}))$" errmsg="" multi=""/>
+    <AuxiliaryTerm id="surclass" regexp="(A|S|ADSB|ADSC){1}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="sureqptcode" regexp="^(A|B1|B2|C|D1|E|G1|H|I|L|P|S|U1|U2|V1|V2|X)?" errmsg="" multi=""/>
+    <AuxiliaryTerm id="stayidentifier" regexp="STAY[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="survivaleqpt" regexp="[PDMJ]{1,4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="timehhmm" regexp="(0|1|2)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="timehhmmss" regexp="(0|1|2)[0-9](0|1|2|3|4|5)[0-9](0|1|2|3|4|5)[0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="timehhmm_elapsed" regexp="[0-9]{2}[0-5][0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="timemmss_elapsed" regexp="[0-9]{2}[0-5][0-9]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="timewldcrd" regexp="[0-9+?]{1,4}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="titleid" regexp="[A-Z]{1,10}" errmsg="" multi=""/>
+    <AuxiliaryTerm id="waketurbcat" regexp="[HMLJ]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="year" regexp="[0-9]{2}" errmsg="" multi=""/>
 </AuxTerms>
