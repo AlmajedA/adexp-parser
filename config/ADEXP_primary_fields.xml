@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PrimaryFields>
+
+  <!--─────────────────────────────────────────────────────────-->
+  <!-- 1. BASIC primary field  ‒  “-EOBT <timehhmm>”          -->
+  <!--─────────────────────────────────────────────────────────-->
+  <PrimaryField id="EOBT"
+                kind="basic"
+                errmsg="invalid off‑block time"
+                multi="false">
+    <!-- one auxiliary term that already defines the 4‑digit time -->
+    <AuxTermRef ref="timehhmm"/>
+  </PrimaryField>
+  <!--  A.3 entry: eobt  b  '-' "EOBT" timehhmm  Estimated Off‑Block Time  -->
+  <!--  :contentReference[oaicite:0]{index=0} -->
+
+  <!--─────────────────────────────────────────────────────────-->
+  <!-- 2. COMPOUND / structured field ‒ “-AD …”               -->
+  <!--─────────────────────────────────────────────────────────-->
+  <PrimaryField id="AD"
+                kind="compound"
+                errmsg="invalid AD field"
+                multi="false">
+    <!-- required -->
+    <SubFieldRef ref="adid"       min="1" max="1"/>
+    <!-- optional single‑occurrence sub‑fields -->
+    <SubFieldRef ref="fl"         min="0" max="1"/>
+    <SubFieldRef ref="flblock"    min="0" max="1"/>
+    <SubFieldRef ref="eto"        min="0" max="1"/>
+    <SubFieldRef ref="to"         min="0" max="1"/>
+    <SubFieldRef ref="cto"        min="0" max="1"/>
+    <SubFieldRef ref="sto"        min="0" max="1"/>
+    <SubFieldRef ref="ptstay"     min="0" max="1"/>
+    <SubFieldRef ref="ptrfl"      min="0" max="1"/>
+    <SubFieldRef ref="ptrulchg"   min="0" max="1"/>
+    <SubFieldRef ref="ptspeed"    min="0" max="1"/>
+    <SubFieldRef ref="ptmach"     min="0" max="1"/>
+  </PrimaryField>
+  <!--  A.3 entry shows all those tokens as optional parts of AD  -->
+  <!--  :contentReference[oaicite:1]{index=1} -->
+
+  <!--─────────────────────────────────────────────────────────-->
+  <!-- 3. LIST field ‒  “-BEGIN LRCA { airspace } -END LRCA”   -->
+  <!--─────────────────────────────────────────────────────────-->
+  <PrimaryField id="LRCA"
+                kind="list"
+                errmsg="invalid LRCA list"
+                multi="false">
+    <!-- at least one AIRSPACE sub‑field, unlimited repeats, order significant -->
+    <SubFieldRef ref="airspace"   min="1" max="*"/>
+  </PrimaryField>
+  <!--  A.3 entry: lrca  c  '-BEGIN' 'LRCA' { airspace } '-END' 'LRCA' …  -->
+  <!--  :contentReference[oaicite:2]{index=2} -->
+
+</PrimaryFields>

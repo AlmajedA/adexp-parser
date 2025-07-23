@@ -53,8 +53,8 @@ day: (0|1|2|3)[0-9]
     <AuxiliaryTerm id="firindicator" regexp="[A-Z]{4}" errmsg="" multi=""/>
     <AuxiliaryTerm id="flightlevel" regexp="((F|A)[0-9]{3}|(S|M)[0-9]{4})" errmsg="" multi=""/>
     <AuxiliaryTerm id="flightplanstatus" regexp="^(ALTRV|ATFMX|FFR|FLTCK|HAZMAT|HEAD|HOSP|HUM|MARSA|MEDEVAC|NONRVSM|SAR|STATE)?" errmsg="" multi=""/>
-    <AuxiliaryTerm id="flightrule" regexp="(I|V|Y|Z)" errmsg="" multi=""/>
-    <AuxiliaryTerm id="flighttype" regexp="(S|N|G|M|X)" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flightrule" regexp="[IVYZ]" errmsg="" multi=""/>
+    <AuxiliaryTerm id="flighttype" regexp="[SNGMX]" errmsg="" multi=""/>
     <AuxiliaryTerm id="flighttypechg" regexp="(OAT|GAT)" errmsg="" multi=""/>
     <AuxiliaryTerm id="fulldate" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9]" errmsg="" multi=""/>
     <AuxiliaryTerm id="fulldatetime" regexp="[0-9]{2}[0-9]{2}(0|1)[0-9](0|1|2|3)[0-9](0|1|2)[0-9](0|1|2|3|4|5)][0-9]" errmsg="" multi=""/>
@@ -111,4 +111,128 @@ day: (0|1|2|3)[0-9]
     <AuxiliaryTerm id="titleid" regexp="[A-Z]{1,10}" errmsg="" multi=""/>
     <AuxiliaryTerm id="waketurbcat" regexp="[HMLJ]" errmsg="" multi=""/>
     <AuxiliaryTerm id="year" regexp="[0-9]{2}" errmsg="" multi=""/>
+
+    <AuxiliaryTerm id="literal_ADDRINFO" regexp="ADDRINFO" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_dash" regexp="-" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ADID" regexp="ADID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ADNAME" regexp="ADNAME" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ADSADDRESS" regexp="ADSADDRESS" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ADSQVLTSP" regexp="ADSQVLTSP" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_AGAPPQUALIFIER" regexp="AGAPPQUALIFIER" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_AGAPPVERSION" regexp="AGAPPVERSION" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_AIRROUTE" regexp="AIRROUTE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_AIRSPACE" regexp="AIRSPACE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_AIRSPDES" regexp="AIRSPDES" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_APPNAME" regexp="APPNAME" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_APPVERSION" regexp="APPVERSION" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ASP" regexp="ASP" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ATIQV" regexp="ATIQV" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_BRNG" regexp="BRNG" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CMLTSP" regexp="CMLTSP" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CONDITION" regexp="CONDITION" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CPCQVLTSP" regexp="CPCQVLTSP" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CPDLCADDRESS" regexp="CPDLCADDRESS" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CRFL1" regexp="CRFL1" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CRFL2" regexp="CRFL2" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CRMACH" regexp="CRMACH" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CRSPEED" regexp="CRSPEED" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_CTO" regexp="CTO" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_DISTNC" regexp="DISTNC" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_EFL" regexp="EFL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ENDREG" regexp="ENDREG" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_EQPT" regexp="EQPT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ETI" regexp="ETI" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ETO" regexp="ETO" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_EXCCOND" regexp="EXCCOND" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FAC" regexp="FAC" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FIR" regexp="FIR" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FL" regexp="FL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FLBLOCK" regexp="FLBLOCK" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FLOW" regexp="FLOW" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FLOWLST" regexp="FLOWLST" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FLOWRATE" regexp="FLOWRATE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FLOWROLE" regexp="FLOWROLE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FRMARCID" regexp="FRMARCID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FRARCTYP" regexp="FRARCTYP" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FROM" regexp="FROM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_FROMPOS" regexp="FROMPOS" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_GEOID" regexp="GEOID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_IFPDLONG" regexp="IFPDLONG" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_IFPDSUM" regexp="IFPDSUM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_ILSCAT" regexp="ILSCAT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_LASTNUM" regexp="LASTNUM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_LATTD" regexp="LATTD" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_LONGTD" regexp="LONGTD" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_NETWORKTYPE" regexp="NETWORKTYPE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_NUM" regexp="NUM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PENRATE" regexp="PENRATE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_POSTPROCTXT" regexp="POSTPROCTXT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PREPROCTXT" regexp="PREPROCTXT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PT" regexp="PT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTCRSCLIMB" regexp="PTCRSCLIMB" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTDLE" regexp="PTDLE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTFLTRUL" regexp="PTFLTRUL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTID" regexp="PTID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTMACH" regexp="PTMACH" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTMILRUL" regexp="PTMILRUL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTRFL" regexp="PTRFL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTRTE" regexp="PTRTE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTRULCHG" regexp="PTRULCHG" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTSPEED" regexp="PTSPEED" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_PTSTAY" regexp="PTSTAY" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RATEPERIOD" regexp="RATEPERIOD" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RELDIST" regexp="RELDIST" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RECVR" regexp="RECVR" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REFASRTE" regexp="REFASRTE" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REFID" regexp="REFID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REFLOC" regexp="REFLOC" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGCOND" regexp="REGCOND" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGDESC" regexp="REGDESC" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGID" regexp="REGID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGLIST" regexp="REGLIST" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGNUM" regexp="REGNUM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGREASON" regexp="REGREASON" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REGULATION" regexp="REGULATION" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REMARK" regexp="REMARK" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_REMARK" regexp="REMARK" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RENID" regexp="RENID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RESPUNIT" regexp="RESPUNIT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RFPDLONG" regexp="RFPDLONG" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RFPDSUM" regexp="RFPDSUM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RVRLIMIT" regexp="RVRLIMIT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RWYAVAIL" regexp="RWYAVAIL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RWYID" regexp="RWYID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_RWYINFO" regexp="RWYINFO" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_SENDER" regexp="SENDER" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_SEQNUM" regexp="SEQNUM" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_SFL" regexp="SFL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_STARTREG" regexp="STARTREG" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_STATID" regexp="STATID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_STATREASON" regexp="STATREASON" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_STAYIDENT" regexp="STAYIDENT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_STO" regexp="STO" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_SUREQPT" regexp="SUREQPT" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_TFL" regexp="TFL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_TFVID" regexp="TFVID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_TIME" regexp="TIME" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_TO" regexp="TO" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_TOPOS" regexp="TOPOS" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_TXTIME" regexp="TXTIME" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_UNITID" regexp="UNITID" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_UNTIL" regexp="UNTIL" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_VALPERIOD" regexp="VALPERIOD" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_VIA1" regexp="VIA1" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_VIA2" regexp="VIA2" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_VIA3" regexp="VIA3" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_VIA4" regexp="VIA4" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_XTI" regexp="XTI" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_BEGIN" regexp="BEGIN" errmsg="" multi="false"/>
+    <AuxiliaryTerm id="literal_END" regexp="END" errmsg="" multi="false"/>
+
+    <AuxiliaryTerm id="networkid"
+                    regexp="[A-Z0-9]{2,10}"
+                    errmsg="expect 2‑10 alphanumerics"
+                    multi="false"/>
+    
+
 </AuxTerms>

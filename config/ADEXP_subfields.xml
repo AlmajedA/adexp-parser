@@ -1,98 +1,752 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SubFields>
-    <SubField
-      id="ADDRINFO"
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="ADDRINFO" errmsg="invalid ADDRINFO" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADDRINFO"/>
+    <SubFieldRef ref="NETWORKTYPE"/>
+    <SubFieldRef ref="FAC"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="ADID" errmsg="Designator of an aerodrome (ICAO code or 'ZZZZ')" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADID"/>
+    <AuxTermRef ref="icaoaerodrome"/>
+  </SubField>  
+
+  <SubField id="ADNAME" errmsg="invalid ADNAME" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADNAME"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="ADSADDRESS" errmsg="invalid ADSADDRESS" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADSADDRESS"/>
+    <AuxTermRef ref="hexadecimal"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="ADSQVLTSP" errmsg="invalid ADSQVLTSP" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADSQVLTSP"/>
+    <SubFieldRef ref="AGAPPQUALIFIER"/>
+    <SubFieldRef ref="AGAPPVERSION"/>
+    <SubFieldRef ref="ADSADDRESS"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="AGAPPQUALIFIER" errmsg="invalid AGAPPQUALIFIER" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_AGAPPQUALIFIER"/>
+    <AuxTermRef ref="agappqualifier"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="AGAPPVERSION" errmsg="invalid AGAPPVERSION" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_AGAPPVERSION"/>
+    <AuxTermRef ref="agappversion"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="AIRROUTE" errmsg="invalid AIRROUTE" multi="false">
+    <AuxTermRef  ref="literal_dash"/>
+    <AuxTermRef  ref="literal_AIRROUTE"/>
+    <SubFieldRef ref="NUM"/>
+    <SubFieldRef ref="REFASRTE"/>
+    <SubFieldRef ref="FLBLOCK"/>
+    <SubFieldRef ref="VALPERIOD"/>
+    <SubFieldRef ref="REMARK"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="AIRSPACE" errmsg="invalid AIRSPACE" multi="false">
+    <AuxTermRef  ref="literal_dash"/>
+    <AuxTermRef  ref="literal_AIRSPACE"/>
+    <SubFieldRef ref="NUM"/>
+    <SubFieldRef ref="AIRSPDES"/>
+    <SubFieldRef ref="FLBLOCK"/>
+    <SubFieldRef ref="VALPERIOD"/>
+    <SubFieldRef ref="RESPUNIT"/>
+    <SubFieldRef ref="REMARK"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="AIRSPDES" errmsg="invalid AIRSPDES" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_AIRSPDES"/>
+    <AuxTermRef ref="airspdes"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="APPNAME"    errmsg="invalid APPNAME"    multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_APPNAME"/>
   </SubField>
-    <!-- ================================= -->
-    <SubField
-      id=""
-      syntax=""
-      errmsg=""
-      multi="">
-    <AuxTermRef ref=""/>
+
+  <SubField id="APPVERSION" errmsg="invalid APPVERSION" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_APPVERSION"/>
   </SubField>
-    <!-- ================================= -->
-  <SubField
-      id="BRNG"
-      syntax="-&quot;BRNG&quot; &lt;refbearing&gt;"
-      errmsg="invalid bearing"
-      multi="false">
+
+  <SubField id="ASP" errmsg="invalid ASP" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ASP"/>
+    <SubFieldRef ref="AIRSPDES"/>
+    <SubFieldRef ref="ETI"/>
+    <SubFieldRef ref="XTI"/>
+  </SubField>
+
+  <SubField id="ATIQV" errmsg="invalid ATIQV" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ATIQV"/>
+    <SubFieldRef ref="AGAPPQUALIFIER"/>
+    <SubFieldRef ref="AGAPPVERSION"/>
+  </SubField>
+
+  <SubField id="BRNG" errmsg="Bearing of a point from a navigation aid (° magnetic)" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_BRNG"/>
     <AuxTermRef ref="refbearing"/>
+  </SubField>  
+  
+  <SubField id="CMLTSP" errmsg="invalid CMLTSP" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CMLTSP"/>
+    <AuxTermRef ref="hexadecimal"/>
+  </SubField>
+
+  <SubField id="CONDITION" errmsg="invalid CONDITION" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CONDITION"/>
+  </SubField>
+
+  <SubField id="CPCQVLTSP" errmsg="invalid CPCQVLTSP" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CPCQVLTSP"/>
+    <SubFieldRef ref="AGAPPQUALIFIER"/>
+    <SubFieldRef ref="AGAPPVERSION"/>
+    <SubFieldRef ref="CPDLCADDRESS"/>
+  </SubField>
+
+  <SubField id="CPDLCADDRESS" errmsg="invalid CPDLCADDRESS" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CPDLCADDRESS"/>
+    <AuxTermRef ref="hexadecimal"/>
+  </SubField>
+
+  <SubField id="CRFL1" errmsg="invalid CRFL1" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CRFL1"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="CRFL2" errmsg="invalid CRFL2" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CRFL2"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="CRMACH" errmsg="invalid CRMACH" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CRMACH"/>
+    <AuxTermRef ref="machnumber"/>
+  </SubField>
+
+  <SubField id="CRSPEED" errmsg="invalid CRSPEED" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CRSPEED"/>
+    <AuxTermRef ref="spd"/>
+  </SubField>
+
+  <SubField id="CTO" errmsg="invalid CTO" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_CTO"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="DISTNC" errmsg="invalid DISTNC" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_DISTNC"/>
+  </SubField>
+
+  <SubField id="EFL" errmsg="invalid EFL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_EFL"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="ENDREG" errmsg="invalid ENDREG" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ENDREG"/>
+    <AuxTermRef ref="day"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="EQPT" errmsg="invalid EQPT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_EQPT"/>
+    <AuxTermRef ref="eqptcode"/>
+    <AuxTermRef ref="eqptstatus"/>
+  </SubField>
+
+  <SubField id="ETI" errmsg="invalid ETI" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ETI"/>
+    <AuxTermRef ref="datetime"/>
+    <AuxTermRef ref="seconds"/>
+  </SubField>
+
+  <SubField id="ETO" errmsg="invalid ETO" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ETO"/>
+    <AuxTermRef ref="date"/>
+    <AuxTermRef ref="timehhmm"/>
+    <AuxTermRef ref="seconds"/>
+  </SubField>
+
+  <SubField id="EXCCOND" errmsg="invalid EXCCOND" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_EXCCOND"/>
+    <SubFieldRef ref="CONDITION"/>
+  </SubField>
+
+  <SubField id="FAC" errmsg="invalid FAC" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FAC"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="FIR" errmsg="invalid FIR" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FIR"/>
+    <AuxTermRef ref="firindicator"/>
+  </SubField>
+
+  <SubField id="FL" errmsg="invalid FL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FL"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="FLBLOCK" errmsg="invalid FLBLOCK" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FLBLOCK"/>
+    <AuxTermRef ref="flightlevel"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+
+  <SubField id="FLOW" errmsg="Traffic‑flow definition" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FLOW"/>
+    <SubFieldRef ref="FROMPOS"/>
+    <SubFieldRef ref="VIA1"/>
+    <SubFieldRef ref="VIA2"/>
+    <SubFieldRef ref="TOPOS"/>
+    <SubFieldRef ref="VIA3"/>
+    <SubFieldRef ref="VIA4"/>
+    <SubFieldRef ref="FLOWROLE"/>
+  </SubField>  
+  
+  <SubField id="FLOWLST" errmsg="invalid FLOWLST" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_BEGIN"/>
+    <AuxTermRef ref="literal_FLOWLST"/>
+    <SubFieldRef ref="FLOW"/>
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_END"/>
+    <AuxTermRef ref="literal_FLOWLST"/>
+  </SubField>
+
+  <SubField id="FLOWRATE" errmsg="invalid FLOWRATE" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FLOWRATE"/>
+    <AuxTermRef ref="flowratevalue"/>
+  </SubField>
+
+  <SubField id="FLOWROLE" errmsg="invalid FLOWROLE" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FLOWROLE"/>
+    <AuxTermRef ref="flowrole"/>
+  </SubField>
+
+  <SubField id="FRMARCID" errmsg="invalid FRMARCID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FRMARCID"/>
+    <AuxTermRef ref="aircraftid"/>
+  </SubField>
+
+  <SubField id="FRARCTYP" errmsg="invalid FRARCTYP" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FRARCTYP"/>
+    <AuxTermRef ref="icaoaircrafttype"/>
+  </SubField>
+
+  <SubField id="FROM" errmsg="invalid FROM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FROM"/>
+    <AuxTermRef ref="day"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="FROMPOS" errmsg="invalid FROMPOS" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_FROMPOS"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="GEOID" errmsg="invalid GEOID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_GEOID"/>
+    <AuxTermRef ref="geoname"/>
+  </SubField>
+
+  <SubField id="IFPDLONG" errmsg="invalid IFPDLONG" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_IFPDLONG"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="IFPDSUM" errmsg="invalid IFPDSUM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_IFPDSUM"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="ILSCAT" errmsg="invalid ILSCAT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ILSCAT"/>
+    <AuxTermRef ref="ilscat"/>
+  </SubField>
+
+  <SubField id="LASTNUM" errmsg="invalid LASTNUM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_LASTNUM"/>
+    <AuxTermRef ref="lastnum"/>
+  </SubField>
+
+  <SubField id="LATTD" errmsg="invalid LATTD" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_LATTD"/>
+    <AuxTermRef ref="latitudeside"/>
+    <AuxTermRef ref="latitudelong"/>
+  </SubField>
+
+  <SubField id="LONGTD" errmsg="invalid LONGTD" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_LONGTD"/>
+    <AuxTermRef ref="longitudeside"/>
+    <AuxTermRef ref="longitudelong"/>
+  </SubField>
+  
+  <SubField id="NETWORKTYPE" errmsg="invalid network type" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_NETWORKTYPE"/>
+    <AuxTermRef ref="networkid"/>
+  </SubField>  
+  
+    <SubField id="NUM" errmsg="invalid NUM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_NUM"/>
+    <AuxTermRef ref="numdays"/>
+  </SubField>
+
+  <SubField id="PENRATE" errmsg="invalid PENRATE" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PENRATE"/>
+    <AuxTermRef ref="penrate"/>
+  </SubField>
+
+  <SubField id="POSTPROCTXT" errmsg="invalid POSTPROCTXT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_POSTPROCTXT"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="PREPROCTXT" errmsg="invalid PREPROCTXT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PREPROCTXT"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="PT" errmsg="invalid PT" multi="false">
+    <AuxTermRef  ref="literal_dash"/>
+    <AuxTermRef  ref="literal_PT"/>
+    <SubFieldRef ref="PTID"/>
+    <SubFieldRef ref="PTCRSCLIMB" min="0" max="1"/>
+    <SubFieldRef ref="PTSPEED"     min="0" max="1"/>
+    <SubFieldRef ref="PTMACH"      min="0" max="1"/>
+    <SubFieldRef ref="PTFLTRUL"    min="0" max="1"/>
+    <SubFieldRef ref="PTMILRUL"    min="0" max="1"/>
+    <SubFieldRef ref="PTRTE"       min="0" max="1"/>
+    <SubFieldRef ref="PTSTAY"      min="0" max="1"/>
+    <SubFieldRef ref="PTRFL"       min="0" max="1"/>
+    <SubFieldRef ref="PTRULCHG"    min="0" max="1"/>
+    <SubFieldRef ref="PTDLE"       min="0" max="1"/>
+  </SubField>
+
+  <SubField id="PTCRSCLIMB" errmsg="invalid PTCRSCLIMB" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTCRSCLIMB"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="PTDLE" errmsg="invalid PTDLE" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTDLE"/>
+    <AuxTermRef ref="timehhmm_elapsed"/>
+  </SubField>
+
+  <SubField id="PTFLTRUL" errmsg="invalid PTFLTRUL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTFLTRUL"/>
+    <AuxTermRef ref="flightrule"/>
+  </SubField>
+
+  <SubField id="PTID" errmsg="invalid PTID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTID"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="PTMACH" errmsg="invalid PTMACH" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTMACH"/>
+    <AuxTermRef ref="machnumber"/>
+  </SubField>
+
+  <SubField id="PTMILRUL" errmsg="invalid PTMILRUL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTMILRUL"/>
+    <AuxTermRef ref="flighttypechg"/>
+  </SubField>
+
+  <SubField id="PTRFL" errmsg="invalid PTRFL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTRFL"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="PTRTE" errmsg="invalid PTRTE" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTRTE"/>
+    <AuxTermRef ref="rrteid"/>
+  </SubField>
+
+  <SubField id="PTRULCHG" errmsg="invalid PTRULCHG" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTRULCHG"/>
+    <AuxTermRef ref="rulechg"/>
+  </SubField>
+
+  <SubField id="PTSPEED" errmsg="invalid PTSPEED" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTSPEED"/>
+    <AuxTermRef ref="spd"/>
+  </SubField>
+
+  <SubField id="PTSTAY" errmsg="invalid PTSTAY" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_PTSTAY"/>
+    <AuxTermRef ref="stayidentifier"/>
+  </SubField>
+
+  <SubField id="RATEPERIOD" errmsg="invalid RATEPERIOD" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RATEPERIOD"/>
+    <AuxTermRef ref="rateperiod"/>
+  </SubField>
+
+  <SubField id="RELDIST" errmsg="invalid RELDIST" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RELDIST"/>
+    <AuxTermRef ref="reldist"/>
+  </SubField>
+
+  <SubField id="RECVR" errmsg="invalid RECVR" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RECVR"/>
+    <AuxTermRef ref="recvr"/>
+  </SubField>
+
+  <SubField id="REFASRTE" errmsg="invalid REFASRTE" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REFASRTE"/>
+    <AuxTermRef ref="refasrte"/>
+  </SubField>
+
+  <SubField id="REFID" errmsg="invalid REFID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REFID"/>
+    <AuxTermRef ref="refid"/>
+  </SubField>
+
+  <SubField id="REFLOC" errmsg="invalid REFLOC" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REFLOC"/>
+    <AuxTermRef ref="refname"/>
+  </SubField>
+
+  <SubField id="REGCOND" errmsg="invalid REGCOND" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_BEGIN"/>
+    <AuxTermRef ref="literal_REGCOND"/>
+    <SubFieldRef ref="RATEPERIOD" min="1" max="*"/>
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_END"/>
+    <AuxTermRef ref="literal_REGCOND"/>
+  </SubField>
+
+  <SubField id="REGDESC" errmsg="invalid REGDESC" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REGDESC"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="REGID" errmsg="invalid REGID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REGID"/>
+    <AuxTermRef ref="regulid"/>
+  </SubField>
+
+  <SubField id="REGLIST" errmsg="invalid REGLIST" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_BEGIN"/>
+    <AuxTermRef ref="literal_REGLIST"/>
+    <SubFieldRef ref="REGULATION" min="1" max="*"/>
+    <SubFieldRef ref="EXCCOND"   min="0" max="1"/>
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_END"/>
+    <AuxTermRef ref="literal_REGLIST"/>
+  </SubField>
+
+  <SubField id="REGNUM" errmsg="invalid REGNUM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REGNUM"/>
+    <AuxTermRef ref="regnum"/>
+  </SubField>
+
+  <SubField id="REGREASON" errmsg="invalid REGREASON" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REGREASON"/>
+    <AuxTermRef ref="regulationreason"/>
+  </SubField>
+
+  <SubField id="REGULATION" errmsg="invalid REGULATION" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REGULATION"/>
+    <SubFieldRef ref="REGNUM"/>
+    <SubFieldRef ref="REGID"/>
+    <SubFieldRef ref="REGDESC"/>
+    <SubFieldRef ref="REFLOC"/>
+    <SubFieldRef ref="STARTREG"/>
+    <SubFieldRef ref="ENDREG"/>
+    <SubFieldRef ref="FLBLOCK"    min="0" max="1"/>
+    <SubFieldRef ref="REMARK"     min="0" max="1"/>
+    <SubFieldRef ref="TFVID"      min="0" max="1"/>
+    <SubFieldRef ref="REGREASON"  min="0" max="1"/>
+    <SubFieldRef ref="REGCOND"    min="0" max="1"/>
+  </SubField>
+
+  <SubField id="REMARK" errmsg="invalid REMARK" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_REMARK"/>
+    <AuxTermRef ref="adexpmsg"/>
+  </SubField>
+
+  <SubField id="RENID" errmsg="invalid RENID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RENID"/>
+    <AuxTermRef ref="renameid"/>
+  </SubField>
+
+  <SubField id="RESPUNIT" errmsg="invalid RESPUNIT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RESPUNIT"/>
+    <AuxTermRef ref="coorstatusident"/>
+  </SubField>
+
+  <SubField id="RFPDLONG" errmsg="invalid RFPDLONG" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_BEGIN"/>
+    <AuxTermRef ref="literal_RFPDLONG"/>
+    <AuxTermRef ref="adexpmsg"/>
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_END"/>
+    <AuxTermRef ref="literal_RFPDLONG"/>
+  </SubField>
+
+  <SubField id="RFPDSUM" errmsg="invalid RFPDSUM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RFPDSUM"/>
+    <SubFieldRef ref="ARCID"/>
+    <SubFieldRef ref="ADEP"/>
+    <SubFieldRef ref="ADES"/>
+    <SubFieldRef ref="EOBT"/>
+    <SubFieldRef ref="ORGN"/>
+    <SubFieldRef ref="DAYS"/>
+    <SubFieldRef ref="VALFROM"/>
+    <SubFieldRef ref="VALUNTIL"/>
+  </SubField>
+
+  <SubField id="RVRLIMIT" errmsg="invalid RVRLIMIT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RVRLIMIT"/>
+    <AuxTermRef ref="rvrlimit"/>
+  </SubField>
+
+  <SubField id="RWYAVAIL" errmsg="invalid RWYAVAIL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RWYAVAIL"/>
+    <AuxTermRef ref="rwyavail"/>
+  </SubField>
+
+  <SubField id="RWYID" errmsg="invalid RWYID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RWYID"/>
+    <AuxTermRef ref="rwyid"/>
+  </SubField>
+
+  <SubField id="RWYINFO" errmsg="invalid RWYINFO" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_RWYINFO"/>
+    <AuxTermRef ref="rwyinfo"/>
+  </SubField>
+
+  <SubField id="SENDER" errmsg="invalid SENDER" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_SENDER"/>
+    <AuxTermRef ref="originatorid"/>
+  </SubField>
+
+  <SubField id="SEQNUM" errmsg="invalid SEQNUM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_SEQNUM"/>
+    <AuxTermRef ref="seqnum"/>
+  </SubField>
+
+  <SubField id="SFL" errmsg="invalid SFL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_SFL"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="STARTREG" errmsg="invalid STARTREG" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_STARTREG"/>
+    <AuxTermRef ref="day"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="STATID" errmsg="invalid STATID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_STATID"/>
+    <AuxTermRef ref="coorstatusident"/>
+  </SubField>
+
+  <SubField id="STATREASON" errmsg="invalid STATREASON" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_STATREASON"/>
+    <AuxTermRef ref="coorstatusreason"/>
+  </SubField>
+
+  <SubField id="STAYIDENT" errmsg="invalid STAYIDENT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_STAYIDENT"/>
+    <AuxTermRef ref="stayidentifier"/>
+  </SubField>
+
+  <SubField id="STO" errmsg="invalid STO" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_STO"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="SUREQPT" errmsg="invalid SUREQPT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_SUREQPT"/>
+    <AuxTermRef ref="sureqptcode"/>
+    <AuxTermRef ref="surclass"/>
+  </SubField>
+
+  <SubField id="TFL" errmsg="invalid TFL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_TFL"/>
+    <AuxTermRef ref="flightlevel"/>
+  </SubField>
+
+  <SubField id="TFVID" errmsg="invalid TFVID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_TFVID"/>
+    <AuxTermRef ref="regulid"/>
+  </SubField>
+
+  <SubField id="TIME" errmsg="invalid TIME" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_TIME"/>
+    <AuxTermRef ref="timehhmm"/>
+    <AuxTermRef ref="seconds"/>
+  </SubField>
+
+  <SubField id="TO" errmsg="invalid TO" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_TO"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="TOPOS" errmsg="invalid TOPOS" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_TOPOS"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="TXTIME" errmsg="invalid TXTIME" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_TXTIME"/>
+    <AuxTermRef ref="timemmss_elapsed"/>
+  </SubField>
+
+  <SubField id="UNITID" errmsg="invalid UNITID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_UNITID"/>
+    <AuxTermRef ref="originatorid"/>
+  </SubField>
+
+  <SubField id="UNTIL" errmsg="invalid UNTIL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_UNTIL"/>
+    <AuxTermRef ref="day"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="VALPERIOD" errmsg="invalid VALPERIOD" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VALPERIOD"/>
+    <SubFieldRef ref="STARTREG"/>
+    <SubFieldRef ref="ENDREG"/>
+  </SubField>
+
+  <SubField id="VIA1" errmsg="invalid VIA1" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VIA1"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="VIA2" errmsg="invalid VIA2" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VIA2"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="VIA3" errmsg="invalid VIA3" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VIA3"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="VIA4" errmsg="invalid VIA4" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VIA4"/>
+    <AuxTermRef ref="point"/>
+  </SubField>
+
+  <SubField id="XTI" errmsg="invalid XTI" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_XTI"/>
+    <AuxTermRef ref="timemmss_elapsed"/>
   </SubField>
 </SubFields>
