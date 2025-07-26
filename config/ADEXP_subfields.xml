@@ -76,13 +76,13 @@
   <SubField id="APPNAME"    errmsg="invalid APPNAME"    multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_APPNAME"/>
-    <Regex regexp="(?:ADS|ATC)">
+    <Regex regexp="(?:ADS|ATC)"/>
   </SubField>
 
   <SubField id="APPVERSION" errmsg="invalid APPVERSION" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_APPVERSION"/>
-    <Regex regexp="(?:00|01){2}">
+    <Regex regexp="(?:00|01){2}"/>
   </SubField>
 
   <SubField id="ASP" errmsg="invalid ASP" multi="false">
@@ -109,13 +109,13 @@
   <SubField id="CMLTSP" errmsg="invalid CMLTSP" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_CMLTSP"/>
-    <Regex regex="(?:[0-9A-F]{36}|[0-9A-F]{38})"/>
+    <Regex regexp="(?:[0-9A-F]{36}|[0-9A-F]{38})"/>
   </SubField>
 
   <SubField id="CONDITION" errmsg="invalid CONDITION" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_CONDITION"/>
-    <Regex regex="[A-Z]{2,20}"/>
+    <Regex regexp="[A-Z]{2,20}"/>
   </SubField>
 
   <SubField id="CPCQVLTSP" errmsg="invalid CPCQVLTSP" multi="false">
@@ -129,7 +129,7 @@
   <SubField id="CPDLCADDRESS" errmsg="invalid CPDLCADDRESS" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_CPDLCADDRESS"/>
-    <Regex regex="(?:[0-9A-F]{36}|[0-9A-F]{38})"/>
+    <Regex regexp="(?:[0-9A-F]{36}|[0-9A-F]{38})"/>
   </SubField>
 
   <SubField id="CRFL1" errmsg="invalid CRFL1" multi="false">
@@ -165,7 +165,7 @@
   <SubField id="DISTNC" errmsg="invalid DISTNC" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_DISTNC"/>
-    <Regex regexp="[0-9]{1,3}">
+    <Regex regexp="[0-9]{1,3}"/>
   </SubField>
 
   <SubField id="EFL" errmsg="invalid EFL" multi="false">
@@ -185,7 +185,7 @@
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_EQPT"/>
     <AuxTermRef ref="eqptcode"/>
-    <Regex regex="\/">
+    <Regex regexp="\/"/>
     <AuxTermRef ref="eqptstatus"/>
   </SubField>
 
@@ -260,7 +260,7 @@
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_BEGIN"/>
     <AuxTermRef ref="literal_FLOWLST"/>
-    <SubFieldRef ref="FLOW" min=1/>
+    <SubFieldRef ref="FLOW" min="1"/>
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_END"/>
     <AuxTermRef ref="literal_FLOWLST"/>
@@ -269,13 +269,13 @@
   <SubField id="FLOWRATE" errmsg="invalid FLOWRATE" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_FLOWRATE"/>
-    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{3,7}" ref="flowratevalue"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{3,7}"/>
   </SubField>
 
   <SubField id="FLOWROLE" errmsg="invalid FLOWROLE" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_FLOWROLE"/>
-    <Regex regexp="(?:EX|IE|EM|IN)" ref="flowrole"/>
+    <Regex regexp="(?:EX|IE|EM|IN)"/>
   </SubField>
 
   <SubField id="FRMARCID" errmsg="invalid FRMARCID" multi="false">
@@ -322,19 +322,23 @@
   <SubField id="IFPDSUM" errmsg="invalid IFPDSUM" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_IFPDSUM"/>
-    <AuxTermRef ref="adexpmsg"/>
+    <SubFieldRef ref="ARCID"/>
+    <SubFieldRef ref="ADEP"/>
+    <SubFieldRef ref="ADES"/>
+    <SubFieldRef ref="EOBT"/>
+    <SubFieldRef ref="ORGN"/>
   </SubField>
 
   <SubField id="ILSCAT" errmsg="invalid ILSCAT" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_ILSCAT"/>
-    <AuxTermRef ref="ilscat"/>
+    <Regex regexp="(?:I|II|IIIa|IIIb|NOILS)"/>
   </SubField>
 
   <SubField id="LASTNUM" errmsg="invalid LASTNUM" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_LASTNUM"/>
-    <AuxTermRef ref="lastnum"/>
+    <Regex regexp="[0-9]{3}"/>
   </SubField>
 
   <SubField id="LATTD" errmsg="invalid LATTD" multi="false">
@@ -354,19 +358,20 @@
   <SubField id="NETWORKTYPE" errmsg="invalid network type" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_NETWORKTYPE"/>
-    <AuxTermRef ref="networkid"/>
+    <Regex regexp="[A-Z0-9]{2,10}"/>
   </SubField>  
   
-    <SubField id="NUM" errmsg="invalid NUM" multi="false">
+  <SubField id="NUM" errmsg="invalid NUM" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_NUM"/>
-    <AuxTermRef ref="numdays"/>
+    <Regex regexp="[0-9]{3,4}"/>
   </SubField>
 
   <SubField id="PENRATE" errmsg="invalid PENRATE" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_PENRATE"/>
-    <AuxTermRef ref="penrate"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{3,7}"/>
+
   </SubField>
 
   <SubField id="POSTPROCTXT" errmsg="invalid POSTPROCTXT" multi="false">
@@ -385,22 +390,41 @@
     <AuxTermRef  ref="literal_dash"/>
     <AuxTermRef  ref="literal_PT"/>
     <SubFieldRef ref="PTID"/>
+
+    <Choice min="0" max="1">
+      <SubFieldRef ref="FL"/>
+      <SubFieldRef ref="FLBLOCK"/>
+    </Choice>
+
+    <SubFieldRef ref="SFL"        min="0" max="1"/>
+    <SubFieldRef ref="ETO"        min="0" max="1"/>
+    <SubFieldRef ref="TO"         min="0" max="1"/>
+    <SubFieldRef ref="CTO"        min="0" max="1"/>
+    <SubFieldRef ref="STO"        min="0" max="1"/>
+    <SubFieldRef ref="PTRTE"      min="0" max="1"/>
+    <SubFieldRef ref="PTSTAY"     min="0" max="1"/>
+    <SubFieldRef ref="PTRFL"      min="0" max="1"/>
+    <SubFieldRef ref="PTRULCHG"   min="0" max="1"/>
+
+    <Choice min="0" max="1">
+      <SubFieldRef ref="PTSPEED"/>
+      <SubFieldRef ref="PTMACH"/>
+    </Choice>
+
     <SubFieldRef ref="PTCRSCLIMB" min="0" max="1"/>
-    <SubFieldRef ref="PTSPEED"     min="0" max="1"/>
-    <SubFieldRef ref="PTMACH"      min="0" max="1"/>
-    <SubFieldRef ref="PTFLTRUL"    min="0" max="1"/>
-    <SubFieldRef ref="PTMILRUL"    min="0" max="1"/>
-    <SubFieldRef ref="PTRTE"       min="0" max="1"/>
-    <SubFieldRef ref="PTSTAY"      min="0" max="1"/>
-    <SubFieldRef ref="PTRFL"       min="0" max="1"/>
-    <SubFieldRef ref="PTRULCHG"    min="0" max="1"/>
-    <SubFieldRef ref="PTDLE"       min="0" max="1"/>
+    <SubFieldRef ref="PTDLE"      min="0" max="1"/>
   </SubField>
+
 
   <SubField id="PTCRSCLIMB" errmsg="invalid PTCRSCLIMB" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_PTCRSCLIMB"/>
-    <AuxTermRef ref="flightlevel"/>
+    <Choice>
+      <SubFieldRef ref="PTSPEED"/>
+      <SubFieldRef ref="PTMACH"/>
+    </Choice>
+    <SubFieldRef ref="CRFL1"/>
+    <SubFieldRef ref="CRFL2"/>
   </SubField>
 
   <SubField id="PTDLE" errmsg="invalid PTDLE" multi="false">
@@ -412,7 +436,7 @@
   <SubField id="PTFLTRUL" errmsg="invalid PTFLTRUL" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_PTFLTRUL"/>
-    <AuxTermRef ref="flightrule"/>
+    <AuxTermRef ref="rulechg"/>
   </SubField>
 
   <SubField id="PTID" errmsg="invalid PTID" multi="false">
@@ -442,13 +466,13 @@
   <SubField id="PTRTE" errmsg="invalid PTRTE" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_PTRTE"/>
-    <AuxTermRef ref="rrteid"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{2,}"/> 
   </SubField>
 
   <SubField id="PTRULCHG" errmsg="invalid PTRULCHG" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_PTRULCHG"/>
-    <AuxTermRef ref="rulechg"/>
+    <Regex regexp="(?:VFR|IFR|OAT|GAT|IFPSTART|IFPSTOP)"/> 
   </SubField>
 
   <SubField id="PTSPEED" errmsg="invalid PTSPEED" multi="false">
@@ -461,49 +485,57 @@
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_PTSTAY"/>
     <AuxTermRef ref="stayidentifier"/>
+    <AuxTermRef ref="timehhmm"/>
   </SubField>
 
   <SubField id="RATEPERIOD" errmsg="invalid RATEPERIOD" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RATEPERIOD"/>
-    <AuxTermRef ref="rateperiod"/>
+    <SubFieldRef ref="FROM"/>
+    <SubFieldRef ref="UNTIL"/>
+    <SubFieldRef ref="FLOWRATE"/>
+    <SubFieldRef ref="PENRATE"/>
   </SubField>
 
   <SubField id="RELDIST" errmsg="invalid RELDIST" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RELDIST"/>
-    <AuxTermRef ref="reldist"/>
+    <Regex regexp="[0-9]{2}"/> 
   </SubField>
 
   <SubField id="RECVR" errmsg="invalid RECVR" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RECVR"/>
-    <AuxTermRef ref="recvr"/>
+    <SubFieldRef ref="FAC"/>
   </SubField>
 
   <SubField id="REFASRTE" errmsg="invalid REFASRTE" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REFASRTE"/>
-    <AuxTermRef ref="refasrte"/>
+    <AuxTermRef ref="atsroute"/>
+    <AuxTermRef ref="point"/>
+    <AuxTermRef ref="country" min="0" max="1"/>
+    <AuxTermRef ref="point"/>
+    <AuxTermRef ref="country" min="0" max="1"/>
   </SubField>
 
   <SubField id="REFID" errmsg="invalid REFID" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REFID"/>
-    <AuxTermRef ref="refid"/>
+    <AuxTermRef ref="refname"/>
   </SubField>
 
   <SubField id="REFLOC" errmsg="invalid REFLOC" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REFLOC"/>
-    <AuxTermRef ref="refname"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,15}"/>
   </SubField>
 
   <SubField id="REGCOND" errmsg="invalid REGCOND" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_BEGIN"/>
     <AuxTermRef ref="literal_REGCOND"/>
-    <SubFieldRef ref="RATEPERIOD" min="1" max="*"/>
+    <SubFieldRef ref="RATEPERIOD" min="0" max="*"/>
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_END"/>
     <AuxTermRef ref="literal_REGCOND"/>
@@ -512,7 +544,7 @@
   <SubField id="REGDESC" errmsg="invalid REGDESC" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REGDESC"/>
-    <AuxTermRef ref="adexpmsg"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,}"/>
   </SubField>
 
   <SubField id="REGID" errmsg="invalid REGID" multi="false">
@@ -535,13 +567,16 @@
   <SubField id="REGNUM" errmsg="invalid REGNUM" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REGNUM"/>
-    <AuxTermRef ref="regnum"/>
+    <Regex regexp="[0-9]{3}"/>
+    <Regex regexp="\/"/>
+    <Regex regexp="[0-9]{2}"/>
+
   </SubField>
 
   <SubField id="REGREASON" errmsg="invalid REGREASON" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REGREASON"/>
-    <AuxTermRef ref="regulationreason"/>
+    <Regex regexp="[A-Z]{4,12}"/>
   </SubField>
 
   <SubField id="REGULATION" errmsg="invalid REGULATION" multi="false">
@@ -563,7 +598,7 @@
   <SubField id="REMARK" errmsg="invalid REMARK" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_REMARK"/>
-    <AuxTermRef ref="adexpmsg"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,}"/>
   </SubField>
 
   <SubField id="RENID" errmsg="invalid RENID" multi="false">
@@ -575,7 +610,7 @@
   <SubField id="RESPUNIT" errmsg="invalid RESPUNIT" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RESPUNIT"/>
-    <AuxTermRef ref="coorstatusident"/>
+    <Regex regexp="[A-Z]{3,12}"/>
   </SubField>
 
   <SubField id="RFPDLONG" errmsg="invalid RFPDLONG" multi="false">
@@ -588,7 +623,7 @@
     <AuxTermRef ref="literal_RFPDLONG"/>
   </SubField>
 
-  <SubField id="RFPDSUM" errmsg="invalid RFPDSUM" multi="false">
+  <!-- <SubField id="RFPDSUM" errmsg="invalid RFPDSUM" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RFPDSUM"/>
     <SubFieldRef ref="ARCID"/>
@@ -599,48 +634,52 @@
     <SubFieldRef ref="DAYS"/>
     <SubFieldRef ref="VALFROM"/>
     <SubFieldRef ref="VALUNTIL"/>
-  </SubField>
+  </SubField> -->
 
   <SubField id="RVRLIMIT" errmsg="invalid RVRLIMIT" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RVRLIMIT"/>
-    <AuxTermRef ref="rvrlimit"/>
+    <Regex regexp="[0-9]{3}"/>
   </SubField>
 
   <SubField id="RWYAVAIL" errmsg="invalid RWYAVAIL" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RWYAVAIL"/>
-    <AuxTermRef ref="rwyavail"/>
+    <Regex regexp="(?:D|A|C|B)"/>
   </SubField>
 
   <SubField id="RWYID" errmsg="invalid RWYID" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RWYID"/>
-    <AuxTermRef ref="rwyid"/>
+    <Regex regexp="[0-9]{2}"/>
+    <Regex regexp="(?:L|R|C)"/>
   </SubField>
 
   <SubField id="RWYINFO" errmsg="invalid RWYINFO" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_RWYINFO"/>
-    <AuxTermRef ref="rwyinfo"/>
+    <SubFieldRef ref="RWYID"/>
+    <SubFieldRef ref="RWYAVAIL"/>
+    <SubFieldRef ref="ILSCAT" min="0" max="1"/>
   </SubField>
 
   <SubField id="SENDER" errmsg="invalid SENDER" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_SENDER"/>
-    <AuxTermRef ref="originatorid"/>
+    <SubFieldRef ref="FAC"/>
   </SubField>
 
   <SubField id="SEQNUM" errmsg="invalid SEQNUM" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_SEQNUM"/>
-    <AuxTermRef ref="seqnum"/>
+    <Regex regexp="[0-9]{3}"/>
   </SubField>
 
   <SubField id="SFL" errmsg="invalid SFL" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_SFL"/>
     <AuxTermRef ref="flightlevel"/>
+    <Regex regexp="(?:A|B)"/>
   </SubField>
 
   <SubField id="STARTREG" errmsg="invalid STARTREG" multi="false">
@@ -672,13 +711,17 @@
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_STO"/>
     <AuxTermRef ref="timehhmm"/>
+    <AuxTermRef ref="seconds"/>
   </SubField>
-
   <SubField id="SUREQPT" errmsg="invalid SUREQPT" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_SUREQPT"/>
-    <AuxTermRef ref="sureqptcode"/>
     <AuxTermRef ref="surclass"/>
+    <Regex regexp="\/"/>
+    <AuxTermRef ref="eqptstatus"/>
+    <Regex regexp="\/" min="0" max="1"/>
+    <AuxTermRef ref="sureqptcode" min="0" max="1"/>
+
   </SubField>
 
   <SubField id="TFL" errmsg="invalid TFL" multi="false">
@@ -690,14 +733,13 @@
   <SubField id="TFVID" errmsg="invalid TFVID" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_TFVID"/>
-    <AuxTermRef ref="regulid"/>
+    <Regex regexp="[0-9A-Z]{1,5}"/>
   </SubField>
 
   <SubField id="TIME" errmsg="invalid TIME" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_TIME"/>
     <AuxTermRef ref="timehhmm"/>
-    <AuxTermRef ref="seconds"/>
   </SubField>
 
   <SubField id="TO" errmsg="invalid TO" multi="false">
@@ -709,19 +751,21 @@
   <SubField id="TOPOS" errmsg="invalid TOPOS" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_TOPOS"/>
-    <AuxTermRef ref="point"/>
+    <Regex regexp="[0-9A-Z]{1,15}"/>
+
   </SubField>
 
   <SubField id="TXTIME" errmsg="invalid TXTIME" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_TXTIME"/>
-    <AuxTermRef ref="timemmss_elapsed"/>
+    <AuxTermRef ref="datetime"/>
+    <AuxTermRef ref="seconds"/>
   </SubField>
 
   <SubField id="UNITID" errmsg="invalid UNITID" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_UNITID"/>
-    <AuxTermRef ref="originatorid"/>
+    <Regex regexp="[0-9A-Z]{2,10}"/>
   </SubField>
 
   <SubField id="UNTIL" errmsg="invalid UNTIL" multi="false">
@@ -734,37 +778,95 @@
   <SubField id="VALPERIOD" errmsg="invalid VALPERIOD" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_VALPERIOD"/>
-    <SubFieldRef ref="STARTREG"/>
-    <SubFieldRef ref="ENDREG"/>
+    <AuxTermRef ref="fulldatetime"/>
+    <AuxTermRef ref="fulldatetime"/>
   </SubField>
 
   <SubField id="VIA1" errmsg="invalid VIA1" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_VIA1"/>
-    <AuxTermRef ref="point"/>
+    <Regex regexp="[0-9A-Z]{1,15}"/>
+
   </SubField>
 
   <SubField id="VIA2" errmsg="invalid VIA2" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_VIA2"/>
-    <AuxTermRef ref="point"/>
+    <Regex regexp="[0-9A-Z]{1,15}"/>
   </SubField>
 
   <SubField id="VIA3" errmsg="invalid VIA3" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_VIA3"/>
-    <AuxTermRef ref="point"/>
+    <Regex regexp="[0-9A-Z]{1,15}"/>
   </SubField>
 
   <SubField id="VIA4" errmsg="invalid VIA4" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_VIA4"/>
-    <AuxTermRef ref="point"/>
+    <Regex regexp="[0-9A-Z]{1,15}"/>
   </SubField>
 
   <SubField id="XTI" errmsg="invalid XTI" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_XTI"/>
-    <AuxTermRef ref="timemmss_elapsed"/>
+    <AuxTermRef ref="datetime"/>
+    <AuxTermRef ref="seconds"/>
   </SubField>
+
+  <SubField id="ARCID" errmsg="invalid ARCID" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ARCID"/>
+    <AuxTermRef ref="aircraftid"/>
+  </SubField>
+
+  <SubField id="ADEP" errmsg="invalid ADEP" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADEP"/>
+    <Choice>
+      <AuxTermRef ref="icaoaerodrome"/>
+      <Regex regexp="AFIL"/>
+      <Regex regexp="ZZZZ"/>
+    </Choice>
+  </SubField>
+
+    <SubField id="ADES" errmsg="invalid ADES" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ADES"/>
+    <Choice>
+      <AuxTermRef ref="icaoaerodrome"/>
+      <Regex regexp="ZZZZ"/>
+    </Choice>
+  </SubField>
+
+  <SubField id="DAYS" errmsg="invalid DAYS" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_DAYS"/>
+    <AuxTermRef ref="numdays"/>
+  </SubField>
+
+  <SubField id="EOBT" errmsg="invalid EOBT" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_EOBT"/>
+    <AuxTermRef ref="timehhmm"/>
+  </SubField>
+
+  <SubField id="ORGN" errmsg="invalid ORGN" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_ORGN"/>
+    <Regex regexp="[A-Z0-9 \(\)\?:\.,'=+\/\r\n]{1,30}"/>
+  </SubField>
+
+  <SubField id="VALFROM" errmsg="invalid VALFROM" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VALFROM"/>
+    <AuxTermRef ref="date"/>
+  </SubField>
+
+  <SubField id="VALUNTIL" errmsg="invalid VALUNTIL" multi="false">
+    <AuxTermRef ref="literal_dash"/>
+    <AuxTermRef ref="literal_VALUNTIL"/>
+    <AuxTermRef ref="date"/>
+  </SubField>
+
 </SubFields>
