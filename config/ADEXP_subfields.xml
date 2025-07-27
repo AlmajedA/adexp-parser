@@ -830,7 +830,7 @@
     </Choice>
   </SubField>
 
-    <SubField id="ADES" errmsg="invalid ADES" multi="false">
+  <SubField id="ADES" errmsg="invalid ADES" multi="false">
     <AuxTermRef ref="literal_dash"/>
     <AuxTermRef ref="literal_ADES"/>
     <Choice>
